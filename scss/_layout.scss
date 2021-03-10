@@ -1,0 +1,196 @@
+.bg-overlay {
+      background-image: url(../images/desktop/image-hero.jpg);
+
+      // height: 50vh;
+
+      padding-bottom: 5rem;
+
+      background-size: cover;
+
+      background-position: center;
+
+
+      @include respond(no-desktop) {
+            background-image: url(../images/mobile/image-hero.jpg);
+
+            // padding: 5rem;
+
+            height: 90vh;
+
+            // background-position: top ;
+
+            // background-size: 100% 100%;
+
+            // background-repeat: no-repeat;
+      }
+
+      
+      @media only screen and (max-width: 500px) {
+            height: 70vh;
+      }
+
+      
+      @media only screen and (max-width: 400px) {
+            height: 80vh;
+      }
+}
+
+.navigation {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      justify-items: center;
+
+      @include respond(no-desktop) {
+            margin-bottom: 10%;
+
+      }
+
+      @include respond (phone ) {
+            margin-bottom: 10%;
+      }
+      // padding: 1rem 2rem;
+
+      &__list {
+            display: flex;
+
+            align-self: center;
+
+            list-style-type: none;
+
+            @include respond (no-desktop) {
+                  opacity: 0;
+                  visibility: hidden;
+
+                  display: none;
+            }
+
+      }
+
+     
+}
+
+.section-features {
+      padding: 5rem;
+      // padding-bottom: 0;
+
+      padding-top: 10rem;
+
+      @media only screen and (max-width:no-desktop) {
+            margin-top: 4rem;
+      }
+
+
+      @include respond (phone) {
+            padding: 0rem;
+
+            margin-top: 5rem;
+      }
+
+      // height: 200vh;
+
+      /* background-color: red; */
+}
+.text {
+      background-color: $White;
+
+      position: absolute;
+
+      left: -12rem;
+
+      bottom: 0;
+      z-index: 10;
+
+      @media only screen and (max-width:$bg-990) {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            
+      }
+
+
+}
+
+.section-gallery {
+      margin-top: 10% !important;
+
+      margin-bottom: 10%;
+
+      @include respond (no-desktop) {
+            display: none;
+      }
+
+     /*  @media only screen  and (max-width:767px ) {
+            display: none;
+      }
+ */
+      &--mobile {
+            display: none;
+
+            @include respond (no-desktop) {
+                  display: block;
+            }
+
+           /*  @media only screen and (max-width:767px) {
+                  display: block;
+            } */
+      }
+}
+
+.section-more {
+      margin-top: 15% !important;
+}
+
+.footer {
+      background-color: $Black;
+
+      padding: 1rem 0;
+
+      margin-top: 4rem;
+
+      // min-height:20rem;
+      // padding-bottom: 0;
+
+
+      
+
+     
+   &-navigation {
+         
+
+      &__list {
+            display: flex;
+
+            margin-bottom: 3rem;
+      }
+   }
+}
+
+.menu {
+      position: fixed;
+      background-color: rgba($Black, 0.95);
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      z-index: 9000;
+
+      
+      height: 0%;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition: all .4s ease;
+
+      &-bar {
+            display: flex;
+            justify-content: space-between;
+      }
+
+      // fix all hover states nd the navigation of the menu
+}

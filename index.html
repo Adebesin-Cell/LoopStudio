@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css.map">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="menu" id="menu">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 menu-bar">
+        <div class="logo-box">
+          <svg class="logo menu__logo">
+            <use xlink:href = "images/sprite.svg#logo"></use>
+          </svg>
+        </div>
+
+        <button class="menu-bar-close close" id="close">
+          <svg class="close__icon">
+            <use xlink:href = "images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="menu__navigation">
+        <li class="menu__item">
+          <a href="#" class="menu__link">About</a>
+          <hr class="cool cool--m">
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Carreers</a>
+          <hr class="cool cool--m">
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Events</a>
+          <hr class="cool cool--m">
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Products</a>
+          <hr class="cool cool--m">
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Support</a>
+          <hr class="cool cool--m">
+        </li>
+      </ul>
+      
+    </div>
+    </div>
+    
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row bg-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="navigation">
+              <div class="logo-box">
+                <svg class="logo">
+                  <use xlink:href = "images/sprite.svg#logo"></use>
+                </svg>
+              </div>
+
+              <button class="menu-bar-toggle" id="open">
+                <svg class="open__icon">
+                  <use xlink:href = "images/sprite.svg#icon-hamburger"></use>
+                </svg>
+              </button>
+
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">About</a>
+                  <hr class="cool">
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Careers</a>
+                  <hr class="cool">
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Events</a>
+                  <hr class="cool">
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Products</a>
+                  <hr class="cool">
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Supports</a>
+                  <hr class="cool">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <h1 class="heading-primary">
+              <span class="heading-primary--sub">Immersive</span>
+              <span class="heading-primary--sub">experiences</span>
+              <span class="heading-primary--sub">that deliver</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-features">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="feature-image-box">
+              <img src="images/desktop/image-interactive.jpg" alt="An interactive image" class="feature__image">
+            </div>
+          </div>
+
+          <div class="col-md-6 feature-text">
+            <div class="text">
+              <h2 class="heading-secondary heading-secondary--main">
+                <span>The leader in</span> 
+                <span>interactive VR </span> 
+              </h2>
+                
+              <!-- </h2> -->
+
+              <p class="paragraph">
+
+                  Founded in 2011, Loopstudios has been producing world-class virtual reality
+                  projects for some of the best companies around the globe. Our award-winning
+                  creations have transformed businesses through digital experiences that bind
+                  to their brand.
+              </p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+      <div class="container mt-5 section-more" >
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="heading-primary heading-primary--black">Our creations</h1> 
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-end u-hide">
+            <a href="#" class="btn btn--black">See All</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop gallery -->
+      <div class="container mt-5 section-gallery">
+        <div class="row">
+          <div class=" gallery">
+            <div class="image-box">
+              <img src="images/desktop/image-deep-earth.jpg" alt="Deep Earth" class="gallery__image"> 
+
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  Deep
+                </span>  
+                <span>
+                  Earth
+                </span>
+              </h2>
+            </div>
+            
+            <div class="image-box">
+              <img src="images/desktop/image-night-arcade.jpg" alt="Night arcade" class="gallery__image">
+
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  Night 
+                </span>  
+                <span>
+                  arcade
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-soccer-team.jpg" alt="Soccer team VR"  class="gallery__image">
+
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  Soccer
+                </span>  
+                <span>
+                  team VR
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-grid.jpg" alt="The grid" class="gallery__image">
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  The 
+                </span>  
+                <span>
+                  grid
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-from-above.jpg" alt="From up above VR" class="gallery__image">
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  From up 
+                </span>  
+                <span>
+                  above VR
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-pocket-borealis.jpg" alt="pocket borealis" class="gallery__image">
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  Pocket 
+                </span>  
+                <span>
+                  borealis
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-curiosity.jpg" alt="curiosity" class="gallery__image">
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  The 
+                </span>  
+                <span>
+                  curiosity
+                </span>
+              </h2>
+            </div>
+            <div class="image-box">
+              <img src="images/desktop/image-fisheye.jpg" alt="fisheye" class="gallery__image">
+              <h2 class="heading-secondary heading-secondary--center heading-secondary--bottom">
+                <span>
+                  Make it 
+                </span>  
+                <span>
+                  fisheye
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gallery--mobile">
+      <div class="row">
+        <div class="gallery--mobile">
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-deep-earth.jpg" alt="Deep earth" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                Deep
+              </span>
+
+              <span>
+                Earth
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-night-arcade.jpg" alt="Night arcade" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                Night 
+              </span>
+
+              <span>
+                Arcade
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-soccer-team.jpg" alt="Soccer team" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                Soccer
+              </span>
+
+              <span>
+                team VR
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-grid.jpg" alt="The grid" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                The
+              </span>
+
+              <span>
+                Grid
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-from-above.jpg" alt="from above up VR" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                From Up
+              </span>
+
+              <span>
+                above VR
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-pocket-borealis.jpg" alt="pocket borealis" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                Pocket
+              </span>
+
+              <span>
+                borealis
+              </span>
+            </h2>
+          </div>
+          
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-curiosity.jpg" alt="curiosity" class="gallery__image--mobile">
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                The
+              </span>
+
+              <span>
+                curiosity
+              </span>
+            </h2>
+          </div>
+          <div class="image-box--mobile">
+            <img src="images/mobile/image-from-above.jpg" alt="fisheye" class="gallery__image--mobile">
+
+            <h2 class="heading-secondary heading-secondary--left"">
+              <span>
+                Make it
+              </span>
+
+              <span>
+                fisheye
+              </span>
+            </h2>
+          </div>
+
+
+        </div>
+
+        <a href="#" class="btn btn--mobile ">See All</a>
+      </div>
+    </section>
+
+    <footer class="footer row">
+      <div class="container">
+        <div class="row u-pd-sm">
+          <div class="col-md-6 footer-box">
+
+            <svg class="footer__logo logo">
+              <use xlink:href= "images/sprite.svg#logo"></use>
+            </svg>
+            <div class="footer-navigation">
+              <ul class="footer-navigation__list">
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">About</a>
+                  <hr class="cool cool--mnone">
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">Careers</a>
+                  <hr class="cool cool--mnone">
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">Events</a>
+                  <hr class="cool cool--mnone">
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">Products</a>
+                  <hr class="cool cool--mnone">
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">Support</a>
+                  <hr class="cool cool--mnone">
+                </li>
+              </ul>
+            </div>
+            
+
+            
+
+          </div>
+          <div class="col-md-6 footer-cta">
+            <div class="footer__icon">
+              <div class="box">
+                <svg class="icon">
+                  <use xlink:href = "images/sprite.svg#icon-facebook"></use>
+                </svg>
+                <hr class="cool cool--mnone">
+              </div>
+              
+              <div class="box">
+                <svg class="icon">
+                  <use xlink:href = "images/sprite.svg#icon-twitter"></use>
+                </svg>
+                <hr class="cool cool--mnone">
+              </div>
+              
+              <div class="box">
+                <svg class="icon">
+                  <use xlink:href = "images/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <hr class="cool cool--mnone" >
+              </div>
+              
+              <div class="box">
+                <svg class="icon">
+                  <use xlink:href = "images/sprite.svg#icon-instagram"></use>
+                </svg>
+                <hr class="cool cool--mnone">
+              </div>
+              
+
+
+
+            </div>
+
+            <p class="footer__text">
+              © 2021 Loopstudios. All rights reserved.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- About -->
+  <!-- Careers -->
+  <!-- Events -->
+  <!-- Products -->
+  <!-- Support -->
+<!--  -->
+  <!-- Immersive experiences that deliver -->
+<!--  -->
+  <!-- The leader in interactive VR -->
+<!--  -->
+  <!-- Founded in 2011, Loopstudios has been producing world-class virtual reality  -->
+  <!-- projects for some of the best companies around the globe. Our award-winning  -->
+  <!-- creations have transformed businesses through digital experiences that bind  -->
+  <!-- to their brand. -->
+<!--  -->
+  <!-- Our creations -->
+<!--  -->
+  <!-- See all -->
+<!--  -->
+  <!-- Deep earth -->
+  <!-- Night arcade -->
+  <!-- Soccer team VR -->
+  <!-- The grid -->
+  <!-- From up above VR -->
+  <!-- Pocket borealis -->
+  <!-- The curiosity -->
+  <!-- Make it fisheye -->
+<!--  -->
+  <!-- About -->
+  <!-- Careers -->
+  <!-- Events -->
+  <!-- Products -->
+  <!-- Support -->
+<!--  -->
+  <!-- © 2021 Loopstudios. All rights reserved. -->
+
+  <!-- <div class="attribution"> -->
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  -->
+    <!-- Coded by <a href="#">Your Name Here</a>. -->
+  <!-- </div> -->
+
+  <script src="Js/App.js"></script>
+</body>
+</html>

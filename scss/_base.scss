@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+      margin: 0;
+      padding: 0 ;
+      box-sizing: inherit;
+}
+html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+
+      @include respond (tab-land) {
+            font-size: 56.25%;
+      }
+
+      @include respond (tab-port) {
+            font-size: 50%;
+      }
+
+      @include respond (bg-desk) {
+            font-size: 75%;
+      }
+
+      // overflow-x: hidden;
+      
+}
+body {
+      font-family: "Alata",sans-serif;
+      font-size: 1.5rem;
+
+      font-weight: 400;
+      // overflow-x: hidden;
+      
+      
+}
+
+.container-fluid {
+      
+
+}
+
+::selection {
+      background-color: $Very-Dark-Gray;
+      color: $White;
+}
+
+.u-pd-sm {
+      padding-bottom: 2rem;
+}
+
+.u-hide {
+      @include respond (no-desktop) {
+          display: none !important;
+      }
+}
